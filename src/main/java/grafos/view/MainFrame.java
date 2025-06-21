@@ -84,7 +84,6 @@ public class MainFrame extends JFrame {
         gbc.insets = new Insets(5, 5, 5, 5);
         gbc.fill = GridBagConstraints.HORIZONTAL;
 
-        // Label e campo de origem
         JLabel labelOrigem = new JLabel("Origem (número):");
         gbc.gridx = 0;
         gbc.gridy = 0;
@@ -95,7 +94,6 @@ public class MainFrame extends JFrame {
         gbc.gridy = 0;
         painelEntrada.add(campoOrigem, gbc);
 
-        // Label e campo de destino
         JLabel labelDestino = new JLabel("Destino (número):");
         gbc.gridx = 0;
         gbc.gridy = 1;
@@ -106,7 +104,6 @@ public class MainFrame extends JFrame {
         gbc.gridy = 1;
         painelEntrada.add(campoDestino, gbc);
 
-        // Botão de calcular
         JButton btnCalcular = new JButton("Calcular Menor Rota");
         gbc.gridx = 0;
         gbc.gridy = 2;
@@ -114,7 +111,6 @@ public class MainFrame extends JFrame {
         gbc.fill = GridBagConstraints.CENTER;
         painelEntrada.add(btnCalcular, gbc);
 
-        // Ação do botão
         btnCalcular.addActionListener(e -> calcularRota());
 
         return painelEntrada;
@@ -135,7 +131,6 @@ public class MainFrame extends JFrame {
                     .map(c -> c.getId() + ": " + c.getSigla())
                     .toArray(String[]::new);
 
-            // Aqui você usaria o controller para calcular a rota
             ResultadoDijkstra resultado = controller.calcularRota(origem, destino, nomesCapitais);
             areaResultado.setText(resultado.getDescricaoCaminho());
             mapaPainel.setCaminhoAtual(resultado.getCaminho());
@@ -165,12 +160,10 @@ public class MainFrame extends JFrame {
     private JPanel criarPainelCentral() {
         JPanel painelCentral = new JPanel(new BorderLayout(10, 10));
 
-        // Painel do mapa
         mapaPainel.setPreferredSize(new Dimension(600, 500));
         mapaPainel.setBorder(BorderFactory.createTitledBorder("Mapa do Brasil"));
         painelCentral.add(mapaPainel, BorderLayout.CENTER);
 
-        // Área de resultados
         areaResultado = new JTextArea();
         areaResultado.setEditable(false);
         areaResultado.setLineWrap(true);

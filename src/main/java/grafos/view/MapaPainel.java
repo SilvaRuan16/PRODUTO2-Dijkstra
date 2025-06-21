@@ -54,8 +54,6 @@ public class MapaPainel extends JPanel {
             int x = (int) (p.x * getWidth() / 600.0);
             int y = (int) (p.y * getHeight() / 500.0);
             g2d.fillOval(x - 5, y - 5, 10, 10);
-
-            // Desenha o ID da capital
             g2d.setColor(Color.BLACK);
             g2d.drawString(String.valueOf(capital.getId()), x + 8, y + 5);
             g2d.setColor(Color.WHITE);
@@ -65,7 +63,6 @@ public class MapaPainel extends JPanel {
     private void desenharCaminho(Graphics2D g2d) {
         g2d.setColor(new Color(0, 0, 0, 150));
         g2d.setStroke(new BasicStroke(3));
-
         for (int i = 0; i < caminhoAtual.size() - 1; i++) {
             Point p1 = capitais.get(caminhoAtual.get(i)).getCoordenada();
             Point p2 = capitais.get(caminhoAtual.get(i + 1)).getCoordenada();
