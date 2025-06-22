@@ -62,8 +62,6 @@ public class RotaController {
         grafo.adicionarAresta(16, 25, 1112);
         grafo.adicionarAresta(22, 4, 1350);
 
-        grafo.adicionarAresta(22, 24, 1962);
-
         return grafo;
     }
 

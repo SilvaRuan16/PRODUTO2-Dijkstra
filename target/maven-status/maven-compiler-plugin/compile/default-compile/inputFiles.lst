@@ -1,2 +1,11 @@
-C:\Users\ruana\OneDrive\Área de Trabalho\Capital\capital\grafos\src\main\java\grafos\componentes\Graph.java
-C:\Users\ruana\OneDrive\Área de Trabalho\Capital\capital\grafos\src\main\java\grafos\Main.java
+/home/ruan/Documentos/Dijkstra/capital/grafos/src/main/java/grafos/Main.java
+/home/ruan/Documentos/Dijkstra/capital/grafos/src/main/java/grafos/controller/RotaController.java
+/home/ruan/Documentos/Dijkstra/capital/grafos/src/main/java/grafos/model/Aresta.java
+/home/ruan/Documentos/Dijkstra/capital/grafos/src/main/java/grafos/model/Capital.java
+/home/ruan/Documentos/Dijkstra/capital/grafos/src/main/java/grafos/model/Grafo.java
+/home/ruan/Documentos/Dijkstra/capital/grafos/src/main/java/grafos/model/GrafoListaAdjacencia.java
+/home/ruan/Documentos/Dijkstra/capital/grafos/src/main/java/grafos/model/ResultadoDijkstra.java
+/home/ruan/Documentos/Dijkstra/capital/grafos/src/main/java/grafos/service/CalculadoraRotaService.java
+/home/ruan/Documentos/Dijkstra/capital/grafos/src/main/java/grafos/service/DijkstraService.java
+/home/ruan/Documentos/Dijkstra/capital/grafos/src/main/java/grafos/view/MainFrame.java
+/home/ruan/Documentos/Dijkstra/capital/grafos/src/main/java/grafos/view/MapaPainel.java
