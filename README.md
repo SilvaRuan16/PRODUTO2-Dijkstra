@@ -24,3 +24,4 @@ Interface:
 Console (obrigatório).
 Interface gráfica usando Swing ou JavaFX.
 Readme.md
+O sistema de calculo de rotas foi feito em maior parte atraves do liveshare.
